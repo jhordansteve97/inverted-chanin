@@ -1,17 +1,12 @@
-# React + Vite
+# Invertir palabras sin alterar su posición
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Descripción
+Se pidio que se realizar un proyecto en el que se invirtiera las palabras sin alterar su posicion con funiones de alto nivel sin usar bucles
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# inverted-chanin" 
+### explicacion
+1. Ser utilizo la funcion `split(' ')` para convertir en arreglo las palabras.
+2. se realizo un `map()` al ser una funcion de alto nivel cumple con los requisitos esto hace que no altere el orden de las palabras.
+3. Se volvio a utiliza el metodo `split('')` con el mismo objetivo pero ahora por letra
+4. Como ya esta en arreglo se puede utilizar el metodo reverse para invertir las letras de cada palabra.
+5. utilizamos el `join('')` para juntar las letras y convertirla en cadena.
+6. realizamos de nuevo el `join(' ')` pero esta vez para las palabras.
